@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ELVIQUE | Fashion Store</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #282c3f;
+            background-color: #f7f7f7;
+        }
+
+        /* Group Selector */
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+        /* ID Selector */
+        #top-message {
+            background-color: #282c3f;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Class Selector */
+        .header {
+            background-color: white;
+            padding: 20px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .logo {
+            color: #ff3f6c;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* Descendant Selector */
+        .navigation a {
+            color: #282c3f;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .search {
+            width: 90%;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        /* Background Image */
+        .banner {
+            background-image: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80");
+            background-size: cover;
+            background-position: center;
+            height: 280px;
+            padding: 30px;
+            margin: 20px;
+            color: white;
+        }
+
+        .banner h1 {
+            background-color: #282c3f;
+            padding: 10px;
+            width: 280px;
+        }
+
+        .banner p {
+            background-color: #ff3f6c;
+            padding: 10px;
+            width: 260px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .title {
+            border-bottom: 2px solid #ff3f6c;
+            padding-bottom: 10px;
+        }
+
+        .offer {
+            background-color: #fff0f4;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .offer a {
+            color: #ff3f6c;
+            font-weight: bold;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #dddddd;
+            padding: 10px;
+        }
+
+        /* Images inside product cards */
+        .product img {
+            width: 100%;
+            height: 220px;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .old-price {
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .discount {
+            color: #ff3f6c;
+        }
+
+        .category li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #282c3f;
+            color: white;
+            padding: 20px;
+        }
+
+        .footer a {
+            color: white;
+        }
+
+        .small-text {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Message -->
+    <div id="top-message">
+        BIG FASHION SALE - EXTRA DISCOUNTS TODAY!
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="logo">
+    ELVIQUE
+    <small>STYLE STORE</small>
+</div>
+
+        <!-- Navigation Links -->
+        <nav class="navigation">
+            <a href="#men">MEN</a>
+            <a href="#women">WOMEN</a>
+            <a href="#kids">KIDS</a>
+            <a href="#offers">OFFERS</a>
+        </nav>
+
+        <!-- Search Box -->
+        <input class="search" type="text"
+               placeholder="Search for products, brands and more">
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Banner -->
+        <section class="banner">
+            <h1>Fashion Days</h1>
+            <p>Styles You Will Love!</p>
+            <a href="#products" style="color:white;">
+                Explore Collection
+            </a>
+        </section>
+
+        <section class="content">
+
+            <!-- Offer Section -->
+            <div class="offer" id="offers">
+                <h2>FLAT 45% OFF</h2>
+                <p>Upgrade your wardrobe with the latest styles.</p>
+                <a href="#products">Shop Now</a>
+            </div>
+
+            <!-- Products -->
+            <h2 class="title" id="products">Trending Products</h2>
+
+            <p>Discover our latest fashion collection.</p>
+
+            <table width="100%" cellpadding="8" cellspacing="8">
+                <tr>
+
+                    <!-- Product 1 -->
+                    <td class="product" id="men">
+                        <img
+                            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80"
+                            alt="Cotton T-shirt">
+
+                        <p><b>Classic Cotton T-shirt</b></p>
+
+                        <p class="price">
+                            ₹499
+                            <small class="old-price">₹999</small>
+                        </p>
+
+                        <p class="discount">50% OFF</p>
+
+                        <a href="#contact">View Details</a>
+                    </td>
+
+                    <!-- Product 2 -->
+                    <td class="product" id="women">
+                        <img
+                            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80"
+                            alt="Women's Fashion">
+
+                        <p><b>Women's Fashion Outfit</b></p>
+
+                        <p class="price">
+                            ₹899
+                            <small class="old-price">₹1499</small>
+                        </p>
+
+                        <p class="discount">45% OFF</p>
+
+                        <a href="#contact">View Details</a>
+                    </td>
+
+                    <!-- Product 3 -->
+                    <td class="product" id="kids">
+                        <img
+                            src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=500&q=80"
+                            alt="Kids Clothing">
+
+                        <p><b>Kids Casual Wear</b></p>
+
+                        <p class="price">
+                            ₹599
+                            <small class="old-price">₹899</small>
+                        </p>
+
+                        <p class="discount">30% OFF</p>
+
+                        <a href="#contact">View Details</a>
+                    </td>
+
+                </tr>
+            </table>
+
+            <!-- Category List -->
+            <aside>
+                <h2 class="title">Shop By Category</h2>
+
+                <ul class="category">
+                    <li><a href="#men">Men's Fashion</a></li>
+                    <li><a href="#women">Women's Fashion</a></li>
+                    <li><a href="#kids">Kids' Fashion</a></li>
+                    <li><a href="#offers">Special Offers</a></li>
+                </ul>
+            </aside>
+
+            <!-- About Section -->
+            <article>
+                <h2 class="title">Why Shop With Us?</h2>
+
+                <p>
+                    Explore fashionable clothes, compare prices
+                    and discover styles for every occasion
+                </p>
+
+                <p class="small-text">
+                    Discover the latest styles for every occasion
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+
+        <h2>ELVIQUE STYLE STORE</h2>
+
+        <p>About | Help | Contact | Privacy</p>
+
+        <a href="#top-message">Back to Top</a>
+
+        <hr>
+
+
+    </footer>
+
+</body>
+</html>
